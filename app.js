@@ -13,6 +13,9 @@ const register = require('./routes/register');
 const show_anbcs = require('./routes/show_anbcs');
 //
 
+app.set('view engine','nunjucks');
+app.set('views','views');
+
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(index);
